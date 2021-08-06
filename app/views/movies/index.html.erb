@@ -1,0 +1,30 @@
+<div class="hero">
+  <div class="container">
+    <h2>The Avengers</h2>
+    <p>In 2018, twenty-three days after Thanos killed half of all life in the universe, Carol Danvers rescues Tony Stark and Nebula from deep space and they reunite with the remaining Avengers—Bruce Banner, Steve Rogers, Thor, Natasha Romanoff, and James Rhodes—and Rocket on Earth.</p>
+
+  </div>
+</div>
+
+<div class="main">
+  <div class="container">
+  <h2>Blockbuster Films</h2>
+
+    <% @movies.each do |m| %>
+      <div class="movie">
+        <%= image_tag m.image%>
+        <h3><%= m.title %></h3>
+        <p><%= m.release_year %></p>
+        <p><%= m.plot %></p>
+        <%= link_to "Movie Details", movie_path(m.id) %>
+
+      </div>
+    <% end %>
+    <div class="footer">
+      <div class="container">
+        <p>@ 2021 NABSBELLE Projects</p>
+      </div>
+    </div>
+
+  </div>
+</div>
