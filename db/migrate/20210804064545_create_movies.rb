@@ -1,11 +1,13 @@
 class CreateMovies < ActiveRecord::Migration[6.1]
   def change
     create_table :movies do |t|
-     t.string :title
-     t.string :image
-     t.string :release_year
-     t.string :plot
-     t.timestamps
+     t.string :name
+     t.string :picture
+     t.date :release_date
+     t.text :description
+     t.integer :rating
+
+     t.timestamps null: false
     end
   end
 end

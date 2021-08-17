@@ -37,13 +37,74 @@ body, html {
 }
 
 .header img {
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 
 .container {
   margin: 0 auto 0;
   width: 960px;
 }
+
+.home-supporting p,.about-supporting p{
+   color:#fff
+    font-size:21px;
+    font-weight:100
+}
+
+.about-supporting p{
+
+    margin-top:30px
+}
+
+.edit-main p{
+    color:#fff;
+    position:relative;
+    top:60px;
+    text-align:center
+}
+
+.edit-main h1{
+    color:#fff;
+    position:relative;
+    top:60px;
+    text-align:center;
+    font-weight:100;
+    margin-bottom:30px;
+    text-shadow:0 2px 3px rgba(0,0,0,0.4)
+}
+
+.new-main p{
+    color:#fff;
+    position:relative;
+    top:60px;
+    text-align:center
+}
+
+.new-main h1{
+    color:#fff;
+    position:relative;
+    top:60px;
+    text-align:center;
+    font-weight:100;
+    margin-bottom:30px;
+    text-shadow:0 2px 3px rgba(0,0,0,0.4)
+}
+
+$starrrColor: #FFD119 !default;
+
+.starrr {
+  display: inline-block;
+
+  a {
+    font-size: 16px;
+    padding: 0 1px;
+    cursor: pointer;
+    color: $starrrColor;
+    text-decoration: none;
+  }
+}
+
+
 
 /*
   MOVIES
@@ -67,8 +128,8 @@ body, html {
   text-transform: uppercase;
 }
 
-.main p {
-  color: #fff;
+.movie p {
+  color: #ffff;
   font-size: 14px;
 }
 
@@ -85,7 +146,7 @@ body, html {
 .hero p {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  color: #fff;
+  color: #FFFFFF;
   display: block;
     display: -webkit-box;
   max-height: 300px;
@@ -94,11 +155,12 @@ body, html {
   width: 30%;
 }
 
-.btn-default,
-.btn-primary {
-    border-radius: 0;
-    font-size: 16px;
-    padding: 12px 26px
+.btn-default{
+
+    background-color:#ffff
+    position:relative;
+    text-align: left;
+    padding: 150px 40px 50px 40px;
 
 }
 
@@ -117,7 +179,7 @@ body, html {
   text-align: center;
   text-decoration: none;
   transition: background-color 0.5s;
-  width: 120px;
+  width: 110px;
 }
 
 .hero a:hover {
@@ -125,13 +187,20 @@ body, html {
   transition: background-color 0.5s;
 }
 
-h3,
-h3 a {
+h3{
+  color: #FFFFFF;
+  font-size: 25px;
+  position:relative;
+  height: auto;
+  line-height: 30px;
+}
+
+ p {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   line-height: 18px;
   margin: 12px 0 4px;
-  text-transform: uppercase;
+  height: auto;
   text-decoration: none;
 }
 
@@ -141,20 +210,17 @@ h3 a {
   margin: 0 10px 80px 0;
   margin-bottom: 80px;
   width: 184px;
-}
-
-.movie {
-  height: 450px;
+    height: 300px;
 }
 
 
 
 .movie:nth-child(5n + 6) {
-  margin: 0 0 80px 0;
+  margin: 0px 10px 80px 0;
 }
 
 .movie img{
-  width: 100%;
+  width: 95%;
 }
 
 .movie a {
@@ -170,9 +236,11 @@ p.year {
   MOVIE SHOW
 */
 .movie-show .movie {
+  color: #ffff;
   padding: 160px 0 0 0;
   width: 100%;
 }
+
 
 .movie-show .movie img {
   float: left;
@@ -180,30 +248,35 @@ p.year {
 }
 
 .movie-show .movie h3 {
-  color: #0393ff;
-  font-size: 40px;
+  color: #FFFF;
+  font-size: 30px;
   height: auto;
-  line-height: 40px;
+  line-height: 30px;
 }
 
-.info {
+.main movie-show, .info p{
+  color: #ffff;
   display: block;
   float: left;
-  margin: 0 0 0 40px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 18px;
+  margin: 12px 0 4px;
+  height: auto;
+  text-decoration: none;
   width: calc(100% - 224px);
 }
 
 .movie-show .movie p {
   display: block;
+  color: #ffff;
+padding: 0px 5px;
+
 }
 
 .movie-show .movie p.year {
   margin: 0 0 20px 0;
 }
 
-/*
-  ACTORS LIST
-*/
 
  .moviesList a{
   color: #0393ff;
@@ -234,7 +307,8 @@ p.year {
   }
 
   .movie h3 {
-    font-size: 15px;
+    font-size: 10px;
+    padding: 12px 50px
   }
 
   .movie a {
@@ -260,12 +334,25 @@ p.year {
 
   .movie-show .movie h3 {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 30px;
   }
 
   .movie a, {
     font-size: 14px;
   }
+
+  .footer {
+      background-color: #f9f9f9;
+      border-top: solid 1px #F5F5F5;
+      padding: 40px 0 30px 0;
+      text-align: center
+  }
+  .footer p {
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #aaa
+  }
+
 }
 
 

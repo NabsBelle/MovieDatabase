@@ -2,27 +2,29 @@
   <div class="container">
     <div class="movie">
 
-      <!-- Display the movie's info here -->
 
       <div class="info">
-        <%= image_tag @movie.image%>
-        <h3 class="movie-title"><%= @movie.title %></h3>
-        <p class="movie-release-year"><%= @movie.release_year %></p>
-        <p class="movie-plot"><%= @movie.plot  %></p>
+        <%= image_tag @movie.picture%>
+        <h3><%= @movie.name %></h3>
+        <p> Release-Date:  <%= @movie.release_date %></p>
+        <p><%= @movie.description %></p>
+          <p> Rating:  <%= @movie.rating %></p>
+        <div class='starrr'></div>
 
-        <p> <%= link_to "Add", movie_path(@movie), { :class => 'btn btn-primary' }%> </p>
-        <p> <%= link_to "Edit", movie_path(@movie), { :class => 'btn btn-primary' } %> </p>
 
-        <p>
-        <%= link_to "Home", movie_path(@movie), { :class => 'btn btn-primary' } %>
-        </p>
+
+       <div class="btn-default">
+
+      | <%= link_to 'Edit', edit_movie_path(@movie) %>
+      | <%= link_to 'Delete', movie_path(@movie), method: :Delete, data: {confirm: 'Are you Sure?'} %>
+      | <%= link_to 'Home',movies_path(@movie) %> |
+      </div>
+
       </div>
     </div>
 
-    <div class="footer">
-      <div class="container">
-        <p>@ 2021 NABSBELLE Projects</p>
-      </div>
-    </div>
   </div>
 </div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<script src="dist/starrr.js"></script>
+<script>$('.starrr').starrr()</script>

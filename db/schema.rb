@@ -13,10 +13,11 @@
 ActiveRecord::Schema.define(version: 2021_08_04_064641) do
 
   create_table "movies", force: :cascade do |t|
-    t.string "title"
-    t.string "image"
-    t.string "release_year"
-    t.string "plot"
+    t.string "name"
+    t.string "picture"
+    t.date "release_date"
+    t.text "description"
+    t.integer "rating"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
