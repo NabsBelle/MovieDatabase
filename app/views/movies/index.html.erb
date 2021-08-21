@@ -1,12 +1,26 @@
-<html>
-<head>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+
+     <div class="navbar-header">
+       <ul> Movie Details </ul>
+        <ul> Sign Up </ul>
+        <ul> About </ul>
+        <ul> Contact </ul>
+     </div>
+  </div>
+
+</nav>
 <div class="hero">
   <div class="container">
     <h2>The Avengers</h2>
-    <p>In 2018, twenty-three days after Thanos killed half of all life in the universe, Carol Danvers rescues Tony Stark and Nebula from deep space and they reunite with the remaining Avengers—Bruce Banner, Steve Rogers, Thor, Natasha Romanoff, and James Rhodes—and Rocket on Earth.</p>
+    <p>In 2018, twenty-three days after Thanos killed half of all life in the universe,
+      Carol Danvers rescues Tony Stark and Nebula from deep space and they reunite with the
+       remaining Avengers—Bruce Banner, Steve Rogers, Thor, Natasha Romanoff, and James Rhodes—and
+       Rocket on Earth.</p>
   </div>
 </div>
-</head>
+
 <div class="main">
   <div class="container">
   <h2>Blockbuster Films</h2>
@@ -14,6 +28,7 @@
       <div class="movie">
         <%= image_tag m.picture%>
         <h3><%= m.name %></h3>
+
      <p> | <%= link_to "View Details", movie_path(m.id) %> | </p>
      </div>
         <% end %>
@@ -26,5 +41,3 @@
 
       </div>
     </div>
-
-  </html>

@@ -1,4 +1,11 @@
 
+.navbar-header ul{
+  color:#fff;
+  font-size:20px;
+  position:center;
+  display: inline;
+  padding: 50px 70px;
+}
 
 
 * {
@@ -14,8 +21,6 @@
   clear: both;
   height: 0;
 }
-
-
 
 body, html {
   background: #000;
@@ -42,7 +47,7 @@ body, html {
 
 .container {
   margin: 0 auto 0;
-  width: 960px;
+  width: 960px
 }
 
 .home-supporting p,.about-supporting p{
@@ -74,6 +79,7 @@ body, html {
 }
 
 .new-main p{
+
     color:#fff;
     position:relative;
     top:60px;
@@ -81,6 +87,7 @@ body, html {
 }
 
 .new-main h1{
+
     color:#fff;
     position:relative;
     top:60px;
@@ -89,21 +96,6 @@ body, html {
     margin-bottom:30px;
     text-shadow:0 2px 3px rgba(0,0,0,0.4)
 }
-
-$starrrColor: #FFD119 !default;
-
-.starrr {
-  display: inline-block;
-
-  a {
-    font-size: 16px;
-    padding: 0 1px;
-    cursor: pointer;
-    color: $starrrColor;
-    text-decoration: none;
-  }
-}
-
 
 
 /*
@@ -255,6 +247,7 @@ p.year {
 }
 
 .main movie-show, .info p{
+
   color: #ffff;
   display: block;
   float: left;

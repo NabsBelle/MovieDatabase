@@ -1,8 +1,4 @@
-
-
 (($, window) ->
-
-
 
   window.Starrr = class Starrr
     defaults:

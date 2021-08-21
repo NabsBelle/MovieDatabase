@@ -4,27 +4,28 @@
 
 
       <div class="info">
+
         <%= image_tag @movie.picture%>
         <h3><%= @movie.name %></h3>
         <p> Release-Date:  <%= @movie.release_date %></p>
         <p><%= @movie.description %></p>
           <p> Rating:  <%= @movie.rating %></p>
-        <div class='starrr'></div>
 
+        <div class='starrr'</div>
 
 
        <div class="btn-default">
-
       | <%= link_to 'Edit', edit_movie_path(@movie) %>
       | <%= link_to 'Delete', movie_path(@movie), method: :Delete, data: {confirm: 'Are you Sure?'} %>
       | <%= link_to 'Home',movies_path(@movie) %> |
       </div>
 
+      <script>
+      $('.starrr').starrr()
+      </script>
+
+
       </div>
     </div>
-
   </div>
 </div>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-<script src="dist/starrr.js"></script>
-<script>$('.starrr').starrr()</script>

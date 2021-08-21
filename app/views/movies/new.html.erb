@@ -28,8 +28,16 @@
         <p>  <%= f.submit "Add", { :class => "btn btn-primary" } %></p>
         <p><%= link_to "Back",movies_path(@movie), { :class => "btn btn-primary"}  %> </p>
         <% end %>
+
+        <script>
+        $('#rating-form').raty({
+          path: '/assets/',
+          scoreName: 'movie[rating]'
+        });
+      </script>
+
       </div>
-      <div class="col-md-4 col-md-4-offset"></div>
+
     </div>
   </div>
 </div>
